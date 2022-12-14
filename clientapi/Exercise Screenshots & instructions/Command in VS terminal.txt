@@ -1,0 +1,27 @@
+Exercise:
+Goal
+
+Execute HTTP methods using Postman
+Add dependency, lombok... and use it
+
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.24</version>
+    <scope>provided</scope>
+</dependency>
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+https://projectlombok.org/features/
+
+
+1. mvn clean install (After build success)
+
+2. mvn spring-boot:run
+
+3. Use postman application and use: localhost:8080/client/list
+
