@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "fcdaff8e-287d-46cb-83f9-dd672c32f905",
+		"name": "departmentapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23134243"
+	},
+	"item": [
+		{
+			"name": "Get dept records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/department/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert dept. record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentName\" : \"Finance\",\r\n    \"departmentAddress\" : \"123 marin\",\r\n    \"departmentCode\" : \"Fin100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/department/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update dept by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"departmentIdId\": 1,\r\n        \"departmentName\": \"Finance\",\r\n        \"departmentAddress\": \"123 Marin\",\r\n        \"departmentCode\": \"Fin100\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/department/departments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department",
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete dept by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/department/departments/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"department",
+						"departments",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
